@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production && npm run clean && webpack -p",
-    "serve": "webpack-dev-server --inline --content-base . --history-api-fallback"
+    "serve": "webpack-dev-server --inline --content-base . --history-api-fallback",
+    "postinstall":"npm run build"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
   "author": "",
